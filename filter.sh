@@ -1,5 +1,7 @@
 #!/bin/bash
-set -e
+set -ex
 
 ./build.sh
-mpiexec -np 4 ./build/filter $1 $2 $3
+numProc=$(nproc)
+echo $(pwd)
+mpiexec -np numProc ./build/filter $1 $2 $3

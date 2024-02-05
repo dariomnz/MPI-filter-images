@@ -1,6 +1,7 @@
 # MPI-filter-images
 
 Using MPI, an image filtering program that uses .ppm image files.
+The GUI is made with raylib.
 ## Build
 
 With cmake.
@@ -8,6 +9,10 @@ With cmake.
 ./build.sh
 ```
 
+## GUI Usage
+```bash
+./gui/run.sh
+```
 ## Usage
 ```
 Usage: mpiexec -np <proc_number> ./build/filter <filter_type> <input_file> <output_file>
@@ -26,3 +31,4 @@ Available Filter Types:
   - edge_detection_exaggerated
   - emboss_45_degrees
   - emboss_exaggerated
+```
