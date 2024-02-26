@@ -1,5 +1,13 @@
 #include "PPMtypes.h"
 
+struct filter filter_no_filter = {
+    .name = "no_filter",
+    .filterWidth = 1,
+    .filterHeight = 1,
+    .matrix = {{1}},
+    .factor = 1.0,
+    .bias = 0.0};
+
 struct filter filter_blur_3 = {
     .name = "blur_3",
     .filterWidth = 3,

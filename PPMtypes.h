@@ -28,6 +28,7 @@ struct filter
     double bias;
 };
 
+extern struct filter filter_no_filter;
 extern struct filter filter_blur_3;
 extern struct filter filter_blur_5;
 extern struct filter filter_gaussian_3;
